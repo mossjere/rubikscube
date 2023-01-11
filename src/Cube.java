@@ -205,6 +205,134 @@ public class Cube {
         rotateCubeL();
     }
 
+    public void m()
+    {
+        r();
+        l_();
+        rotateCubeU();
+    }
+
+    public void m_()
+    {
+        r_();
+        l();
+        rotateCubeD();
+    }
+
+    public void e()
+    {
+        u();
+        d_();
+        rotateCubeL();
+    }
+
+    public void e_()
+    {
+        u_();
+        d();
+        rotateCubeR();
+    }
+
+    public void s()
+    {
+        rotateCubeR();
+        m();
+        rotateCubeL();
+    }
+
+    public void s_()
+    {
+        rotateCubeR();
+        m_();
+        rotateCubeL();
+    }
+
+    public void z()
+    {
+        rotateCubeR();
+        rotateCubeU();
+        rotateCubeL();
+    }
+
+    public void z_()
+    {
+        rotateCubeL();
+        rotateCubeU();
+        rotateCubeR();
+    }
+
+    public void uw()
+    {
+        d();
+        rotateCubeR();
+    }
+
+    public void uw_()
+    {
+        d_();
+        rotateCubeL();
+    }
+
+    public void dw()
+    {
+        u();
+        rotateCubeL();
+    }
+
+    public void dw_()
+    {
+        u_();
+        rotateCubeR();
+    }
+
+    public void rw()
+    {
+        l();
+        rotateCubeD();
+    }
+
+    public void rw_()
+    {
+        l_();
+        rotateCubeU();
+    }
+
+    public void lw()
+    {
+        r();
+        rotateCubeU();
+    }
+
+    public void lw_()
+    {
+        r_();
+        rotateCubeD();
+    }
+
+    public void fw()
+    {
+        b();
+        z();
+    }
+
+    public void fw_()
+    {
+        b_();
+        z_();
+    }
+
+    public void bw()
+    {
+        f();
+        z_();
+    }
+
+    public void bw_()
+    {
+        f_();
+        z();
+    }
+
     public void tPerm()
     {
         r();

@@ -24,6 +24,7 @@ public class Rubiks {
 //        System.out.println(cube.scrambleCode);
         Scanner scnr = new Scanner(System.in);
         boolean run = true;
+        cube.scramble();
         while (run) {
             cube.inputMove(scnr.nextLine());
             cube.printCube();
