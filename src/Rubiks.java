@@ -25,9 +25,11 @@ public class Rubiks {
         Scanner scnr = new Scanner(System.in);
         boolean run = true;
         cube.scramble();
+        cube.printCube();
         while (run) {
             cube.inputMove(scnr.nextLine());
             cube.printCube();
+            run = !cube.checkSolved();
         }
     }
 }

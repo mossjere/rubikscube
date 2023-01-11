@@ -702,6 +702,19 @@ public class Cube {
         }
     }
 
+    public boolean checkSolved()
+    {
+        for(int i = 0; i < 6; i++)
+        {
+            for(int j = 0; j < 9; j++)
+            {
+                if(cubeFaces[i][j] != cubeFaces[i][4])
+                    return false;
+            }
+        }
+        return true;
+    }
+
     public void printCube()
     {
         // ⬜ \u2B1C
