@@ -15,6 +15,10 @@ public class Cube {
     {
         createCube();
     }
+    Cube(int __)
+    {
+
+    }
 
     //  5
     //3 0 1 2
@@ -48,6 +52,41 @@ public class Cube {
         for(int i = 0; i < cubeFaces.length; i++)
         {
             Arrays.fill(cubeFaces[i], color.values()[i]);
+        }
+    }
+
+    public void createCube(char[][] faces)
+    {
+        for(int i = 0; i < 6; i++)
+        {
+            for(int j = 0; j < 9; j++)
+            {
+                color currentSquare;
+                switch (faces[i][j])
+                {
+                    case 'W':
+                        currentSquare=color.white;
+                        break;
+                    case 'G':
+                        currentSquare=color.green;
+                        break;
+                    case 'O':
+                        currentSquare=color.orange;
+                        break;
+                    case 'R':
+                        currentSquare=color.red;
+                        break;
+                    case 'B':
+                        currentSquare=color.blue;
+                        break;
+                    case 'Y':
+                        currentSquare=color.yellow;
+                        break;
+                    default:
+                        currentSquare=color.white;
+                }
+                cubeFaces[i][j] = currentSquare;
+            }
         }
     }
 
